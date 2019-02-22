@@ -35,7 +35,7 @@ In the Brain, at a simplistic level, a neuron is a computational unit that gets 
 
 <img src="images/4.png" height="330px"/><br/>
 - x = [ x1, x2, x3....]  are inputs and theta = [theta1, theta2, theta3,...]  are the weights/parameters. 
-- Showing x0(the bias unit/the (+1) unit)depends on notation conveniency,and the inclusion of this [bias](The Bias node.ipynb) enhances the flexibility of the node
+- Showing x0(the bias unit/the (+1) unit)depends on notation conveniency,and the inclusion of this [bias](The_Bias_node.ipynb) enhances the flexibility of the node
 - Activation function in the neural network terminology is just another term for function for the required non-linearity, g
 (z)(sigmoid activation function,etc).<BR/>
 **FOR OVERSIMPLIFICATION AND UNSERSTANDING PURPOSES: ASSUME g(z) IS THE LOGISTIC/SIGMOID FUNCTION.**
