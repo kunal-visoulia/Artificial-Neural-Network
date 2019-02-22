@@ -10,7 +10,7 @@ Example say we have 100 features, x1-x100,, and, **if you were to include all th
 
 **For many machine learning problems, n will be pretty large. Here's an example:**
 #### The Problem of Computer Vision
-Suppose you want to use machine learning to train a classifier to examine an image and tell whether or not the image is a car. To understand why computer vision is hard let's zoom into a small part of the image like that area where the little red rectangle is. It turns out that where you and I see a car, the computer sees is this matrix, of pixel intensity values that tells us the brightness of each pixel in the image.** So the computer vision problem is to look at this matrix of pixel intensity values, and tell us that these numbers represent the door handle of a car.** <br/>
+Suppose you want to use machine learning to train a classifier to examine an image and tell whether or not the image is a car. To understand why computer vision is hard let's zoom into a small part of the image like that area where the little red rectangle is. It turns out that where you and I see a car, the computer sees is this matrix, of pixel intensity values that tells us the brightness of each pixel in the image.**So the computer vision problem is to look at this matrix of pixel intensity values, and tell us that these numbers represent the door handle of a car.** <br/>
 ![](images/2.png)<br/>
 
 Keeping the pixel1 and pixel2 positions same for the dataset, we'll find is that the cars and non-cars end up lying in different regions of the space, and we need non-linear hypotheses to try to separate out the two classes.<br/>
