@@ -1,4 +1,5 @@
 # Artificial Neural Networks
+https://adventuresinmachinelearning.com/neural-networks-tutorial/
 #### Non-Linear Hypothesis
 Consider a supervised learning classification problem where you have a training set like this. If you want to apply logistic regression to this problem, one thing you could do is apply logistic regression with a lot of nonlinear features like. <br/>
 ![](images/1.png)<br/>
@@ -23,12 +24,18 @@ So, feaure vector is the list of the pixel intensities/brightness( values betwee
 The brain does so many different and amazing things. It seems like if you want to mimic the brain you have to write lots of different pieces of software to mimic all of these different fascinating, amazing things(seeing, hearing, taste,do math, speak), but there is this fascinating hypothesis that the way the brain does all of these different things is not with like a thousand different programs, but instead, with just a single learning algorithm. This is just a hypothesis but let me share with you some of the evidence for this.<br/>
 >Neuroscientists have done the following fascinating experiments where you cut the wire from the ears to the auditory cortex and you re-wire,in this case an animal's brain, so that the signal from the eyes to the optic nerve eventually gets routed to the auditory cortex. If you do this it turns out, the auditory cortex will learn to see. 
 
+### The structure of an ANN
+##### The artificial neuron
+The biological neuron is simulated in an ANN by an activation function. In classification tasks (e.g. identifying spam e-mails) this **activation function has to have a “switch on” characteristic** – in other words, once the input is greater than a certain value, the output should change state i.e. from 0 to 1, from -1 to 1 or from 0 to >0. **This simulates the “turning on” of a biological neuron**. A common activation function that is used is the sigmoid function.<br/>
+![](images/23.png)<br/>
+As can be seen in the figure above, the function is “activated” i.e. it moves from 0 to 1 when the input x is greater than a certain value.
+
 ##### MODEL REPRESENTATION
 In the Brain, at a simplistic level, a neuron is a computational unit that gets a number of inputs through its input wires(deondrites) and does some computation and then it sends outputs via its axon to other nodes(other neurons in the brain.)
 
 <img src="images/4.png" height="330px"/><br/>
 - x = [ x1, x2, x3....]  are inputs and theta = [theta1, theta2, theta3,...]  are the weights/parameters. 
-- Showing x0(the bias unit/the (+1) unit)depends on notation conveniency.
+- Showing x0(the bias unit/the (+1) unit)depends on notation conveniency,and the inclusion of this [bias](The Bias node.ipynb) enhances the flexibility of the node
 - Activation function in the neural network terminology is just another term for function for the required non-linearity, g
 (z)(sigmoid activation function,etc).<BR/>
 **FOR OVERSIMPLIFICATION AND UNSERSTANDING PURPOSES: ASSUME g(z) IS THE LOGISTIC/SIGMOID FUNCTION.**
