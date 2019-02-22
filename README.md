@@ -26,7 +26,7 @@ The brain does so many different and amazing things. It seems like if you want t
 
 ### The structure of an ANN
 ##### The artificial neuron
-The biological neuron is simulated in an ANN by an activation function. In classification tasks (e.g. identifying spam e-mails) this **activation function has to have a “switch on” characteristic** – in other words, once the input is greater than a certain value, the output should change state i.e. from 0 to 1, from -1 to 1 or from 0 to >0. **This simulates the “turning on” of a biological neuron**. A common activation function that is used is the sigmoid function.<br/>
+The biological neuron is simulated in an ANN by an activation function. In classification tasks (e.g. identifying spam e-mails) this **activation function has to have a “switch on” characteristic** – in other words, once the input is greater than a certain value, the output should change state i.e. from 0 to 1, from -1 to 1 or from 0 to >0. **This simulates the “turning on” of a biological neuron**. A common **activation function that is used is the sigmoid function**.<br/>
 ![](images/23.png)<br/>
 As can be seen in the figure above, the function is “activated” i.e. it moves from 0 to 1 when the input x is greater than a certain value.
 
@@ -35,7 +35,7 @@ In the Brain, at a simplistic level, a neuron is a computational unit that gets 
 
 <img src="images/4.png" height="330px"/><br/>
 - x = [ x1, x2, x3....]  are inputs and theta = [theta1, theta2, theta3,...]  are the weights/parameters. 
-- Showing x0(the bias unit/the (+1) unit)depends on notation conveniency,and the inclusion of this [bias](The_Bias_node.ipynb) enhances the flexibility of the node
+- Showing x0(the bias unit/the (+1) unit)depends on notation conveniency,and the inclusion of this [bias](The_Bias_node.ipynb) enhances the flexibility of the node(by varying the bias “weight” you can change when the node activates).**So the bias in layer 1 is connected to the all the nodes in layer two(except the bias unit of layer 2). Because the bias is not a true node with an activation function, it has no inputs (it always outputs the value +1)**
 - Activation function in the neural network terminology is just another term for function for the required non-linearity, g
 (z)(sigmoid activation function,etc).<BR/>
 **FOR OVERSIMPLIFICATION AND UNSERSTANDING PURPOSES: ASSUME g(z) IS THE LOGISTIC/SIGMOID FUNCTION.**
